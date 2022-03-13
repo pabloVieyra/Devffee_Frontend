@@ -1,0 +1,20 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 2rem;
+  justify-items: center;
+  justify-content: center;
+  grid-template-columns: 0.3fr 1fr;
+}
+
+.container > * {
+  padding: 2rem;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}

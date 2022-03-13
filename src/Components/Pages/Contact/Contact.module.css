@@ -1,0 +1,19 @@
+.container {
+  background-color: #dfd2c6;
+  padding: 8%;
+  border-radius: 5%;
+}
+
+.icons {
+  height: 20vh;
+  width: 5vh;
+  /* padding: 30%; */
+  color: black;
+}
+
+@media (max-width: 650px) {
+  .container {
+    background-color: transparent;
+    padding: 0;
+  }
+}

@@ -1,0 +1,53 @@
+.container {
+  width: 80%;
+  margin: 3rem auto;
+  max-width: 1200px;
+}
+
+.aboutus {
+  display: grid;
+  font-size: 1.7rem;
+  grid-template-rows: repeat(4, min-content);
+  grid-row-gap: 1.5rem;
+}
+
+.first_section {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.first_section > p {
+  width: 55%;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.stores_button_container {
+  margin: 2rem auto;
+}
+
+@media (max-width: 900px) {
+  .first_section {
+    flex-wrap: wrap;
+  }
+  .first_section > p {
+    width: 100%;
+  }
+
+  .logo_container {
+    width: 100%;
+  }
+  .aboutus {
+    font-size: 1.4rem;
+  }
+}

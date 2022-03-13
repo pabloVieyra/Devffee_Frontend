@@ -1,0 +1,135 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+/* HERO */
+
+.hero {
+  scroll-snap-align: start;
+  scroll-margin-top: 200px;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero_title {
+  padding-left: 4rem;
+  width: 40%;
+  color: #f2d5bd;
+  font-size: 3.5rem;
+  position: relative;
+  line-height: 5rem;
+  font-weight: 300;
+}
+.hero_image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.9;
+  object-fit: cover;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container > * {
+  scroll-snap-align: start;
+}
+/* OUR COFFEES */
+
+.coffees {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.coffees_title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #46382e;
+}
+
+.coffees_image_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coffees_image {
+  max-width: 100%;
+  opacity: 0.6;
+  max-height: 450px;
+}
+
+/* MEET OUR STORY/FRANCHISE */
+
+.story {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  gap: 3rem;
+  grid-template-columns: 1fr minmax(100px, 0.5fr);
+}
+
+.story_image,
+.franchise_image {
+  max-width: 100%;
+  opacity: 0.6;
+}
+
+.franchise {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  align-items: center;
+  gap: 3rem;
+  grid-template-columns: minmax(100px, 0.5fr) 1fr;
+}
+
+/* STORES */
+
+.stores {
+  min-height: 100vh;
+  scroll-margin-bottom: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.stores_title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #46382e;
+}
+
+@media (max-width: 900px) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+  .franchise {
+    grid-template-columns: 1fr;
+  }
+  .franchise_button_container {
+    order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .container > * {
+    min-height: 400px;
+    margin-block: 3rem;
+    grid-gap: 1rem;
+  }
+}
